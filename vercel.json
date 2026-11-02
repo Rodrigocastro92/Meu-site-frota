@@ -1,0 +1,6 @@
+{
+  "buildCommand": "node scripts/copy-vendor.js",
+  "outputDirectory": "public",
+  "functions": { "api/x.js": { "includeFiles": "{app,data,lib}/**", "maxDuration": 15 } },
+  "rewrites": [ { "source": "/:path*", "destination": "/api/x?__p=/:path*" } ]
+}
